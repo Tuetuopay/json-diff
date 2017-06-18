@@ -11,7 +11,8 @@
   "bin": "bin/json-diff.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test/*.coffee",
-    "cov": "rm -rf lib-cov; jscoverage lib lib-cov; env JSLIB=lib-cov mocha -R dot && env JSLIB=lib-cov mocha -R html-cov >coverage.html; open coverage.html"
+    "cov": "rm -rf lib-cov; jscoverage lib lib-cov; env JSLIB=lib-cov mocha -R dot && env JSLIB=lib-cov mocha -R html-cov >coverage.html; open coverage.html",
+    "build": "iced -c lib"
   },
   "dependencies": {
     "dreamopt": "~0.6.0",
